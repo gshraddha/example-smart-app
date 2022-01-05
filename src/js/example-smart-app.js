@@ -22,9 +22,9 @@
                     }
                   });
 
-        $.when(pt, obv).fail(onError);
+        $.when(pt).fail(onError);
 
-        $.when(pt, obv).done(function(patient, obv) {
+        $.when(pt).done(function(patient) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
