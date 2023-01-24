@@ -27,9 +27,7 @@
     <script>
       FHIR.oauth2.authorize({
         'client_id': 'tc5o7QbjMPWk_ATIaNH94RSXwT1FdKsw6jTiev8CA9Q',
-        //'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile',
-        //'scope':  'openid api:fhir user/Encounter.read user/Observation.read user/Patient.read',
-       // 'aud': 'https://appmarket.epic.com/interconnect-amcurprd-oauth/api/FHIR/R4',
+        'aud': 'https://demo.openemr.io/openemr/apis/default/fhir',
         'redirect_uri':'https://gshraddha.github.io/smart-on-fhir-tutorial/example-smart-app/'
         'scope' : 'openid launch api:fhir user/Encounter.read user/Observation.read user/Patient.read'
       });
